@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+h1 {
+    font-size: 30pt;
+    line-height: 30pt;
+    letter-spacing: 15px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#left {
+    width: 50vh;
+    justify-content: flex-start;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+}
+#right {
+    width: 50vh;
+    justify-content: flex-end;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border: solid 2px hsl(0, 93%, 68%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#correo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    width: 80px;
+    height: 46px;
+    border: none;
+    background-color: hsl(0, 93%, 68%);
+    border-radius: 20px;
+    position: relative;
+    /* z-index: 100; */
+    left: -20%;
+}
+
+button:hover {
+background-color: hsl(0, 100%, 81%);
+box-shadow: 0 0 20px rgb(255, 207, 237);
+}
+
+footer {
+    align-content: center;
+    height: 10px;
+    width: 100%;
+}
+
+@media (max-width: 710px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #left {
+        text-align: center;
+        align-items: center;
+        align-self: center;
+    }
+    #right {
+        display: flex;
+    }
+}
